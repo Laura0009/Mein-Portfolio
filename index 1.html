@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights | Cakes & Treats</title>
+    <meta name="description" content="Handgemachte Kuchen und Leckereien für jeden Anlass. Jetzt entdecken und bestellen!">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts für modernes Schriftbild -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav" aria-label="Hauptnavigation">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Unsere Leckereien</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero" tabindex="-1" aria-label="Startseite">
+            <div class="hero-content">
+                <h1>Sweet Delights</h1>
+                <p>Handgemachte Kuchen und Leckereien für jeden Anlass</p>
+            </div>
+        </section>
+
+        <section class="search-container" aria-label="Produktsuche">
+            <label for="search-input" class="visually-hidden">Produkte durchsuchen</label>
+            <input type="search" id="search-input" placeholder="Unsere Leckereien durchsuchen..." autocomplete="off">
+        </section>
+
+        <section id="gallery" class="gallery" aria-label="Produktgalerie">
+            <h2>Unsere leckeren Kreationen</h2>
+            <div class="gallery-grid" id="products-grid" aria-live="polite">
+                <!-- Produkte werden dynamisch geladen -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-label="Kontaktformular">
+            <form class="contact-form" autocomplete="on" novalidate>
+                <h2>Kontakt aufnehmen</h2>
+                <label for="name">Ihr Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Ihr Name" required aria-required="true">
+
+                <label for="email">Ihre E-Mail</label>
+                <input type="email" id="email" class="form-input" placeholder="Ihre E-Mail" required aria-required="true">
+
+                <label for="message">Ihre Nachricht</label>
+                <textarea id="message" class="form-input" placeholder="Ihre Nachricht" rows="5" required aria-required="true"></textarea>
+
+                <button type="submit" class="submit-btn">Nachricht senden</button>
+                <p class="form-feedback" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sweet Delights. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
